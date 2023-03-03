@@ -130,7 +130,7 @@ public String getId_proyecto() {
 	}
 	
 	public Date diferenciaFinPrevistoReal() {
-		return (fecha_fin_previsto-fecha_inicio);
+		return (fecha_fin_previsto - fecha_inicio);
 	}
 	
 	
