@@ -141,7 +141,7 @@ public class empleados {
 	
 		public double salarioBruto() {
 			//Sumamos el salario más la comisión para obtener el salario bruto total
-			return salario
+			return salario;
 		}
 		
 
