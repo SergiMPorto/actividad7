@@ -1,6 +1,6 @@
 package modelojavabeans;
 
-public class clientes {
+public class Clientes {
 	
 	private String cif;
 	private String nombre;
@@ -10,12 +10,12 @@ public class clientes {
 	private int numero_empleado;
 	
 	
-	public clientes() {
+	public Clientes() {
 		super();
 	}
 
 
-	public clientes(String cif, String nombre, String apellidos, String direccion, double facturacion_anual,
+	public Clientes(String cif, String nombre, String apellidos, String direccion, double facturacion_anual,
 			int numero_empleado) {
 		super();
 		this.cif = cif;

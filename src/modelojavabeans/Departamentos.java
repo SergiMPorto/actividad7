@@ -1,6 +1,6 @@
 package modelojavabeans;
 
-public class departamento {
+public class Departamentos {
 	
 	private int id_depar;
 	private String nombre;

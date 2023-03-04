@@ -2,7 +2,7 @@ package modelojavabeans;
 
 import java.util.Date;
 
-public class empleados {
+public class Empleados {
 	
 	private int id_empl;
 	private String nombre;
@@ -12,19 +12,19 @@ public class empleados {
 	private Date fecha_ingreso;
 	private Date fecha_nacimiento;
 	private char genero; 
-	perfiles id_perfil;
-	departamento id_depar;
+	Perfiles id_perfil;
+	Departamentos id_depar;
 	
 	
 	//Metodo sin parametros
 	
-	public empleados() {
+	public Empleados() {
 		super();
 	}
 
 
-	public empleados(int id_empl, String nombre, String apellidos, String pwd, double salario, Date fecha_ingreso,
-			Date fecha_nacimiento, perfiles id_perfil, departamento id_depar) {
+	public Empleados(int id_empl, String nombre, String apellidos, String pwd, double salario, Date fecha_ingreso,
+			Date fecha_nacimiento, Perfiles id_perfil, Departamentos id_depar) {
 		super();
 		this.id_empl = id_empl;
 		this.nombre = nombre;
@@ -108,22 +108,22 @@ public class empleados {
 	}
 
 
-	public perfiles getId_perfil() {
+	public Perfiles getId_perfil() {
 		return id_perfil;
 	}
 
 
-	public void setId_perfil(perfiles id_perfil) {
+	public void setId_perfil(Perfiles id_perfil) {
 		this.id_perfil = id_perfil;
 	}
 
 
-	public departamento getId_depar() {
+	public Departamentos getId_depar() {
 		return id_depar;
 	}
 
 
-	public void setId_depar(departamento id_depar) {
+	public void setId_depar(Departamentos id_depar) {
 		this.id_depar = id_depar;
 	}
 
@@ -219,6 +219,6 @@ public class empleados {
 			return (String.valueOf(letraNombre) + apellido + "@gmail.com").toLowerCase();	
 		}
 			
-			
+		
 	}
 

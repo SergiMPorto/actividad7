@@ -2,11 +2,11 @@ package modelojavabeans;
 
 import java.util.Date;
 
-public class proyecto_con_empleados {
+public class Proyecto_con_Empleados {
 	
 	private int numero_orden;
-    proyectos id_proyecto;
-    empleados id_empl;
+    Proyectos id_proyecto;
+    Empleados id_empl;
     private int horas_asignadas;
     private Date fecha_incorporacion; 
     private double precio_hora;

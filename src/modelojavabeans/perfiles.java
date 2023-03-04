@@ -1,6 +1,6 @@
 package modelojavabeans;
 
-public class perfiles {
+public class Perfiles {
 	private int id_perfil;
 	private String nombre;
 

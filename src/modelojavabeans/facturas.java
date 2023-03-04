@@ -1,6 +1,6 @@
 package modelojavabeans;
 
-public class facturas {
+public class Facturas {
 	
 	private String id_factura;
 	private String descripcion;

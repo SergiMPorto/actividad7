@@ -2,7 +2,7 @@ package modelojavabeans;
 
 import java.util.Date;
 
-public class proyectos {
+public class Proyectos {
 	
 	
 	private String id_proyecto;
@@ -19,11 +19,11 @@ public class proyectos {
 	
 	// constructor sin parametros 
 	
-	public proyectos() {
+	public Proyectos() {
 		super();
 	}
 	// contructor con parametros 
-	public proyectos(String id_proyecto, String descripcion, Date fecha_inicio, Date fecha_fin_previsto,
+	public Proyectos(String id_proyecto, String descripcion, Date fecha_inicio, Date fecha_fin_previsto,
 			double venta_previsto, double coste_previsto, double coste_real, String estado, int jefe_proyecto,
 			String cif) {
 		super();
