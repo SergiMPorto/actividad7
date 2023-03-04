@@ -42,4 +42,16 @@ public class RecursosHumanosDaoImplList implements EmpleadoDao  {
 		return null;
 	}
 
+	@Override
+	public double salarioTotal() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double salarioTotalDepartamento(int id_depar) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }
