@@ -7,28 +7,32 @@ public class Empleados {
 	private int id_empl;
 	private String nombre;
 	private String apellidos;
+	private char genero; 
+	private String mail;
 	private String pwd;
 	private double salario;
 	private Date fecha_ingreso;
 	private Date fecha_nacimiento;
-	private char genero; 
+	
 	Perfiles id_perfil;
 	Departamentos id_depar;
 	
 	
-	//Metodo sin parametros
-	
+	//Constructor  sin parametros
+
 	public Empleados() {
 		super();
 	}
+	//Constructor con parametros. 
 
-
-	public Empleados(int id_empl, String nombre, String apellidos, String pwd, double salario, Date fecha_ingreso,
-			Date fecha_nacimiento, Perfiles id_perfil, Departamentos id_depar) {
+public Empleados(int id_empl, String nombre, String apellidos, char genero, String mail, String pwd, double salario,
+			Date fecha_ingreso, Date fecha_nacimiento, Perfiles id_perfil, Departamentos id_depar) {
 		super();
 		this.id_empl = id_empl;
 		this.nombre = nombre;
 		this.apellidos = apellidos;
+		this.genero = genero;
+		this.mail = mail;
 		this.pwd = pwd;
 		this.salario = salario;
 		this.fecha_ingreso = fecha_ingreso;
@@ -36,11 +40,15 @@ public class Empleados {
 		this.id_perfil = id_perfil;
 		this.id_depar = id_depar;
 	}
+
+
 // getter and setter
 
 	public int getId_empl() {
 		return id_empl;
 	}
+
+
 
 
 	public void setId_empl(int id_empl) {
