@@ -10,7 +10,7 @@ import modelojavabeans.Empleados;
 public interface EmpleadoDao {
 
 	
-	int altaEmpleado(Empleados cliente);
+	int altaEmpleado(Empleados empleado);
 	Empleados buscarUno(String id_empl);
 	List<Empleados> buscarTodos();
 	List<Empleados>empleadosByDepartamentos(int id_depar);
