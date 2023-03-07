@@ -11,7 +11,7 @@ import modelojavabeans.Empleados;
 
 public class EmpleadoDaoImplList extends AbstractDaoMy8 implements EmpleadoDao {
 
-<<<<<<< HEAD
+
 	@Override
 	public int altaEmpleado(Empleados empleado) {
 	sql="insert into empleado values (?,?,?,?,?,?,?,?,?,?,?)";
@@ -134,7 +134,7 @@ public class EmpleadoDaoImplList extends AbstractDaoMy8 implements EmpleadoDao {
 			}
 	
 
->>>>>>> Sergi
+
 	@Override
 	public List<Empleados> buscarTodos() {
 		sql= "select * from empleados";
@@ -198,14 +198,14 @@ public class EmpleadoDaoImplList extends AbstractDaoMy8 implements EmpleadoDao {
 		return 0;
 	}
 
-<<<<<<< HEAD
 
 
 
 
 
 
-=======
+
+
 	@Override
 	public Empleados buscarUno(String id_empl) {
 		sql="select * from empleados where id_empl = ?";
@@ -238,6 +238,5 @@ public class EmpleadoDaoImplList extends AbstractDaoMy8 implements EmpleadoDao {
 
 	
 	}
->>>>>>> Sergi
 
 	
