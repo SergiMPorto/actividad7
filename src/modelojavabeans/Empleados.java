@@ -160,19 +160,7 @@ public void setId_depar(Departamentos id_depar) {
 		}
 		
 		
-		/*public String literalSexo() {
-			if (género=='H') {
-			return "Hombre";
-			}
-			else {
-				if (género=='M') {
-					return "Mujer";
-				}
-				else {
-					return "Sexo incorrecto";
-				}
-			}
-		}*/
+		
 		
 		public String literalSexo() {
 			/*
@@ -199,10 +187,6 @@ public void setId_depar(Departamentos id_depar) {
 			return nombre + " " + apellidos;
 		}
 		
-		
-		/*public String obtenerMail() {
-			return nombre.chars() + apellidos.substring(0);
-		}*/
 		
 		public String obtenerEmail() {
 			/*

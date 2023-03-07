@@ -9,6 +9,7 @@ public class Proyectos {
 	private String descripcion;
 	private Date fecha_inicio;
 	private Date fecha_fin_previsto;
+	private Date fecha_fin_real;
 	private double venta_previsto;
 	private double coste_previsto;
 	private double coste_real;
@@ -24,7 +25,7 @@ public class Proyectos {
 
 
 
-	public Proyectos(String id_proyecto, String descripcion, Date fecha_inicio, Date fecha_fin_previsto,
+	public Proyectos(String id_proyecto, String descripcion, Date fecha_inicio, Date fecha_fin_previsto,Date fecha_fin_real,
 			double venta_previsto, double coste_previsto, double coste_real, String estado, int jefe_proyecto,
 			String cif) {
 		super();
@@ -32,6 +33,7 @@ public class Proyectos {
 		this.descripcion = descripcion;
 		this.fecha_inicio = fecha_inicio;
 		this.fecha_fin_previsto = fecha_fin_previsto;
+		this.fecha_fin_real = fecha_fin_real;
 		this.venta_previsto = venta_previsto;
 		this.coste_previsto = coste_previsto;
 		this.coste_real = coste_real;
@@ -44,6 +46,18 @@ public class Proyectos {
 
 	public String getId_proyecto() {
 		return id_proyecto;
+	}
+
+
+
+	public Date getFecha_fin_real() {
+		return fecha_fin_real;
+	}
+
+
+
+	public void setFecha_fin_real(Date fecha_fin_real) {
+		this.fecha_fin_real = fecha_fin_real;
 	}
 
 
@@ -183,8 +197,10 @@ public class Proyectos {
 		return (coste_real - coste_previsto );
 	}
 	
-	public Date diferenciaFinPrevistoReal() {
+	/*public Date diferenciaFinPrevistoReal() {
+		
 		return (fecha_fin_previsto - fecha_inicio);
-	}
+	
+	}*/
 	
 }
