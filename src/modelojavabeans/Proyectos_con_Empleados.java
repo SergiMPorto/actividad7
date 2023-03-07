@@ -2,7 +2,7 @@ package modelojavabeans;
 
 import java.util.Date;
 
-public class Proyecto_con_Empleados {
+public class Proyectos_con_Empleados {
 	
 	private int numero_orden;
     Proyectos id_proyecto;
@@ -19,3 +19,4 @@ public double costeHorasAsignadas() {
 	return horas_asignadas*precio_hora;
 }
 }
+

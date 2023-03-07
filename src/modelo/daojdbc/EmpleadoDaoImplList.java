@@ -4,7 +4,7 @@ import java.util.List;
 
 import modelojavabeans.Empleados;
 
-public class EmpleadoDaoImplList implements EmpleadoDao {
+public class EmpleadoDaoImplList extends AbstractDaoMy8 implements EmpleadoDao {
 
 	@Override
 	public int altaEmpleado(Empleados empleado) {
@@ -55,5 +55,3 @@ public class EmpleadoDaoImplList implements EmpleadoDao {
 	}
 
 	
-
-}

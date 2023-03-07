@@ -1,6 +1,6 @@
 package modelojavabeans;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class Proyectos {
 	
@@ -17,12 +17,13 @@ public class Proyectos {
 	private String cif;
 	
 	
-	// constructor sin parametros 
 	
 	public Proyectos() {
 		super();
 	}
-	// contructor con parametros 
+
+
+
 	public Proyectos(String id_proyecto, String descripcion, Date fecha_inicio, Date fecha_fin_previsto,
 			double venta_previsto, double coste_previsto, double coste_real, String estado, int jefe_proyecto,
 			String cif) {
@@ -39,82 +40,135 @@ public class Proyectos {
 		this.cif = cif;
 	}
 
-//Getter and setter
 
-public String getId_proyecto() {
+
+	public String getId_proyecto() {
 		return id_proyecto;
 	}
+
+
+
 	public void setId_proyecto(String id_proyecto) {
 		this.id_proyecto = id_proyecto;
 	}
+
+
+
 	public String getDescripcion() {
 		return descripcion;
 	}
+
+
+
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
+
+
+
 	public Date getFecha_inicio() {
 		return fecha_inicio;
 	}
+
+
+
 	public void setFecha_inicio(Date fecha_inicio) {
 		this.fecha_inicio = fecha_inicio;
 	}
+
+
+
 	public Date getFecha_fin_previsto() {
 		return fecha_fin_previsto;
 	}
+
+
+
 	public void setFecha_fin_previsto(Date fecha_fin_previsto) {
 		this.fecha_fin_previsto = fecha_fin_previsto;
 	}
+
+
+
 	public double getVenta_previsto() {
 		return venta_previsto;
 	}
+
+
+
 	public void setVenta_previsto(double venta_previsto) {
 		this.venta_previsto = venta_previsto;
 	}
+
+
+
 	public double getCoste_previsto() {
 		return coste_previsto;
 	}
+
+
+
 	public void setCoste_previsto(double coste_previsto) {
 		this.coste_previsto = coste_previsto;
 	}
+
+
+
 	public double getCoste_real() {
 		return coste_real;
 	}
+
+
+
 	public void setCoste_real(double coste_real) {
 		this.coste_real = coste_real;
 	}
+
+
+
 	public String getEstado() {
 		return estado;
 	}
+
+
+
 	public void setEstado(String estado) {
 		this.estado = estado;
 	}
+
+
+
 	public int getJefe_proyecto() {
 		return jefe_proyecto;
 	}
+
+
+
 	public void setJefe_proyecto(int jefe_proyecto) {
 		this.jefe_proyecto = jefe_proyecto;
 	}
+
+
+
 	public String getCif() {
 		return cif;
 	}
+
+
+
 	public void setCif(String cif) {
 		this.cif = cif;
 	}
-	
-		//toString
-	
+
+
+
 	@Override
 	public String toString() {
-		return "proyectos [id_proyecto=" + id_proyecto + ", descripcion=" + descripcion + ", fecha_inicio="
+		return "Proyectos [id_proyecto=" + id_proyecto + ", descripcion=" + descripcion + ", fecha_inicio="
 				+ fecha_inicio + ", fecha_fin_previsto=" + fecha_fin_previsto + ", venta_previsto=" + venta_previsto
 				+ ", coste_previsto=" + coste_previsto + ", coste_real=" + coste_real + ", estado=" + estado
 				+ ", jefe_proyecto=" + jefe_proyecto + ", cif=" + cif + "]";
 	}
-	
-	
-	// metodos propios 
-	
 	public double margerPrevisto() {
 		return (venta_previsto - coste_previsto);
 	}
@@ -133,6 +187,4 @@ public String getId_proyecto() {
 		return (fecha_fin_previsto - fecha_inicio);
 	}
 	
-	
-
 }
