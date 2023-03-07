@@ -1,17 +1,14 @@
-package modelo.Dao;
+package modelo.daojdbc;
 
 import java.util.List;
-
-import modelojavabeans.Empleados;
-
 
 import modelojavabeans.Empleados;
 
 public interface EmpleadoDao {
 
 	
-	int altaEmpleado(Empleados cliente);
-	Empleados buscarUno(String id_empl);
+	int altaEmpleado(Empleados empleado);
+	Empleados buscarUno(int id_empl);
 	List<Empleados> buscarTodos();
 	List<Empleados>empleadosByDepartamentos(int id_depar);
 	List<Empleados>empleadosBySexo(char sexo);

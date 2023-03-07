@@ -3,9 +3,9 @@ package modelo.Dao;
 import java.util.ArrayList;
 import java.util.List;
 
-
+import modelo.daojdbc.EmpleadoDao;
 import modelojavabeans.Empleados;
-import modelojavabeans.Proyecto_con_Empleados;
+import modelojavabeans.*;
 
 public class EmpleadoDaoImplList implements EmpleadoDao{
 private ArrayList<Empleados> lista;
@@ -16,7 +16,7 @@ private ArrayList<Empleados> lista;
 	}	
 	private void cargarDatos() {
 		EmpleadoDaoImplList Edao= new EmpleadoDaoImplList ();
-		lista.add(new Empleados(121, "Antonio", "Losada", 'H', "antoniolosada@gmail.com", "BlackSpace", 4500, "2021-02-23" , "1989-03-21", 4, 20);
+		//lista.add(new Empleados(121, "Antonio", "Losada", 'H', "antoniolosada@gmail.com", "BlackSpace", 4500, "2021-02-23" , "1989-03-21", 4, 20);
 		
 	}
 	@Override
@@ -25,11 +25,7 @@ private ArrayList<Empleados> lista;
 		return 0;
 	}
 
-	@Override
-	public Empleados buscarUno(String id_empl) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 
 	@Override
 	public List<Empleados> buscarTodos() {
@@ -65,6 +61,11 @@ private ArrayList<Empleados> lista;
 	public double salarioTotalDepartamento(int id_depar) {
 		// TODO Auto-generated method stub
 		return 0;
+	}
+	@Override
+	public Empleados buscarUno(int id_empl) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	

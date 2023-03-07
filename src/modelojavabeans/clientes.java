@@ -1,7 +1,6 @@
 package modelojavabeans;
 
 public class Clientes {
-	
 	private String cif;
 	private String nombre;
 	private String apellidos;
@@ -10,9 +9,11 @@ public class Clientes {
 	private int numero_empleado;
 	
 	
+	
 	public Clientes() {
 		super();
 	}
+
 
 
 	public Clientes(String cif, String nombre, String apellidos, String direccion, double facturacion_anual,
@@ -27,9 +28,11 @@ public class Clientes {
 	}
 
 
+
 	public String getCif() {
 		return cif;
 	}
+
 
 
 	public void setCif(String cif) {
@@ -37,9 +40,11 @@ public class Clientes {
 	}
 
 
+
 	public String getNombre() {
 		return nombre;
 	}
+
 
 
 	public void setNombre(String nombre) {
@@ -47,9 +52,11 @@ public class Clientes {
 	}
 
 
+
 	public String getApellidos() {
 		return apellidos;
 	}
+
 
 
 	public void setApellidos(String apellidos) {
@@ -57,9 +64,11 @@ public class Clientes {
 	}
 
 
+
 	public String getDireccion() {
 		return direccion;
 	}
+
 
 
 	public void setDireccion(String direccion) {
@@ -67,9 +76,11 @@ public class Clientes {
 	}
 
 
+
 	public double getFacturacion_anual() {
 		return facturacion_anual;
 	}
+
 
 
 	public void setFacturacion_anual(double facturacion_anual) {
@@ -77,15 +88,24 @@ public class Clientes {
 	}
 
 
+
 	public int getNumero_empleado() {
 		return numero_empleado;
 	}
 
 
+
 	public void setNumero_empleado(int numero_empleado) {
 		this.numero_empleado = numero_empleado;
 	}
-	
-	
 
+
+
+	@Override
+	public String toString() {
+		return "Clientes [cif=" + cif + ", nombre=" + nombre + ", apellidos=" + apellidos + ", direccion=" + direccion
+				+ ", facturacion_anual=" + facturacion_anual + ", numero_empleado=" + numero_empleado + "]";
+	}
+	
+	
 }
