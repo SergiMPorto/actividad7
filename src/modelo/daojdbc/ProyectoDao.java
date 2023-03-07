@@ -13,4 +13,5 @@ public interface ProyectoDao {
 	List<Proyectos>proyectosByJefeProyectosAndByEstado(int jefeProyecto, String estado);
 	double importesVentasProyectosTerminados(String estado, String id_proyecto);
 	double margenBrutosProyectosTerminados(String estado, String id_proyecto);
+	int diasATerminoProyectoActivo(String codigoProyecto);
 }

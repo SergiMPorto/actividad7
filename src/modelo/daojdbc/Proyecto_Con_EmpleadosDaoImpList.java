@@ -27,12 +27,7 @@ public class Proyecto_Con_EmpleadosDaoImpList extends AbstractDaoMy8 implements 
 		return null;
 	}
 
-	@Override
-	public List<Proyectos_con_Empleados> asignarEmpleadosAProyecto() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
+	
 	@Override
 	public int horasAsignadasAlProyecto(String id_proyecto) {
 		// TODO Auto-generated method stub
@@ -47,6 +42,12 @@ public class Proyecto_Con_EmpleadosDaoImpList extends AbstractDaoMy8 implements 
 
 	@Override
 	public double margenActualdelProyecto(String id_proyecto) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int asignarEmpleadosAProyecto(List<Proyectos_con_Empleados> lista) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
