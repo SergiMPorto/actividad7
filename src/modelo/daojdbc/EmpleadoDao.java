@@ -8,7 +8,7 @@ public interface EmpleadoDao {
 
 	
 	int altaEmpleado(Empleados empleado);
-	Empleados buscarUno(String id_empl);
+	Empleados buscarUno(int id_empl);
 	List<Empleados> buscarTodos();
 	List<Empleados>empleadosByDepartamentos(int id_depar);
 	List<Empleados>empleadosBySexo(char sexo);
