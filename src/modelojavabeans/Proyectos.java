@@ -183,8 +183,10 @@ public class Proyectos {
 		return (coste_real - coste_previsto );
 	}
 	
-	public Date diferenciaFinPrevistoReal() {
+	/*public Date diferenciaFinPrevistoReal() {
+		
 		return (fecha_fin_previsto - fecha_inicio);
-	}
+	
+	}*/
 	
 }

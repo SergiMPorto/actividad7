@@ -11,7 +11,7 @@ import modelojavabeans.Empleados;
 
 public class EmpleadoDaoImplList extends AbstractDaoMy8 implements EmpleadoDao {
 
-<<<<<<< HEAD
+
 	@Override
 	public int altaEmpleado(Empleados empleado) {
 	sql="insert into empleado values (?,?,?,?,?,?,?,?,?,?,?)";
