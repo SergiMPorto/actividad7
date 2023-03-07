@@ -16,7 +16,7 @@ private ArrayList<Empleados> lista;
 	}	
 	private void cargarDatos() {
 		EmpleadoDaoImplList Edao= new EmpleadoDaoImplList ();
-		lista.add(new Empleados(121, "Antonio", "Losada", 'H', "antoniolosada@gmail.com", "BlackSpace", 4500, "2021-02-23" , "1989-03-21", 4, 20)
+		lista.add(new Empleados(121, "Antonio", "Losada", 'H', "antoniolosada@gmail.com", "BlackSpace", 4500, "2021-02-23" , "1989-03-21", 4, 20);
 		
 	}
 	@Override
