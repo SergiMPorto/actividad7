@@ -13,7 +13,6 @@ public class Empleados {
 	private double salario;
 	private Date fecha_ingreso;
 	private Date fecha_nacimiento;
-	
 	Perfiles id_perfil;
 	Departamentos id_depar;
 	
