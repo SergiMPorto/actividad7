@@ -1,9 +1,6 @@
-package modelo.Dao;
+package modelo.daojdbc;
 
 import java.util.List;
-
-import modelojavabeans.Empleados;
-
 
 import modelojavabeans.Empleados;
 

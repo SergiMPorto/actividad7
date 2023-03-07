@@ -1,10 +1,11 @@
-package modelo.Dao;
+package modelo.daojdbc;
 
 import java.util.List;
 
+import modelo.Dao.Proyecto_con_empleadosDao;
 import modelojavabeans.Proyectos;
 
-public class Proyecto_con_empleadoDaoImpList implements Proyecto_con_empleadosDao {
+public class Poryecto_Con_EmpleadosDaoImpList implements Proyecto_Con_EmpleadosDao{
 
 	@Override
 	public int altaProyecto(Proyectos proyecto) {

@@ -1,4 +1,4 @@
-package modelo.Dao;
+package modelo.daojdbc;
 
 import java.util.List;
 
@@ -43,18 +43,6 @@ public class ProyectoDaoImplList implements ProyectoDao {
 	}
 
 	@Override
-	public Proyectos importesVentasProyectosTerminados(double ventas_previstas) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Proyectos margenBrutosProyectosTerminados(double ventas_previstas, double costes_reales) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
 	public double importesVentasProyectosTerminados(String estado, String id_proyecto) {
 		// TODO Auto-generated method stub
 		return 0;
@@ -65,6 +53,5 @@ public class ProyectoDaoImplList implements ProyectoDao {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
 
 }

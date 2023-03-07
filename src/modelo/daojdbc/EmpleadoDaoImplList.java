@@ -1,26 +1,13 @@
-package modelo.Dao;
+package modelo.daojdbc;
 
-import java.util.ArrayList;
 import java.util.List;
 
-
 import modelojavabeans.Empleados;
-import modelojavabeans.Proyecto_con_Empleados;
 
-public class EmpleadoDaoImplList implements EmpleadoDao{
-private ArrayList<Empleados> lista;
-	
-	public EmpleadoDaoImplList() {
-		lista = new ArrayList<>();
-		cargarDatos();
-	}	
-	private void cargarDatos() {
-		EmpleadoDaoImplList Edao= new EmpleadoDaoImplList ();
-		lista.add(new Empleados(121, "Antonio", "Losada", 'H', "antoniolosada@gmail.com", "BlackSpace", 4500, "2021-02-23" , "1989-03-21", 4, 20)
-		
-	}
+public class EmpleadoDaoImplList implements EmpleadoDao {
+
 	@Override
-	public int altaEmpleado(Empleados cliente) {
+	public int altaEmpleado(Empleados empleado) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -68,4 +55,5 @@ private ArrayList<Empleados> lista;
 	}
 
 	
+
 }

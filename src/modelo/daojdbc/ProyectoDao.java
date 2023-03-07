@@ -1,12 +1,10 @@
-package modelo.Dao;
+package modelo.daojdbc;
 
 import java.util.List;
 
-import modelojavabeans.Empleados;
 import modelojavabeans.Proyectos;
 
 public interface ProyectoDao {
-
 	int altaProyecto(Proyectos proyecto);
 	Proyectos buscarUno(String id_proyecto);
 	List<Proyectos> buscarTodos();
@@ -15,10 +13,4 @@ public interface ProyectoDao {
 	List<Proyectos>proyectosByJefeProyectosAndByEstado(int jefeProyecto, String estado);
 	double importesVentasProyectosTerminados(String estado, String id_proyecto);
 	double margenBrutosProyectosTerminados(String estado, String id_proyecto);
-	
-	
-	
-	
-	
-
 }
