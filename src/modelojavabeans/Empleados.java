@@ -41,94 +41,94 @@ public Empleados(int id_empl, String nombre, String apellidos, char genero, Stri
 	}
 
 
-// getter and setter
-public int getId_empl() {
-	return id_empl;
-}
-
-public void setId_empl(int id_empl) {
-	this.id_empl = id_empl;
-}
-
-public String getNombre() {
-	return nombre;
-}
-
-public void setNombre(String nombre) {
-	this.nombre = nombre;
-}
-
-public String getApellidos() {
-	return apellidos;
-}
-
-public void setApellidos(String apellidos) {
-	this.apellidos = apellidos;
-}
-
-public char getGenero() {
-	return genero;
-}
-
-public void setGenero(char genero) {
-	this.genero = genero;
-}
-
-public String getMail() {
-	return mail;
-}
-
-public void setMail(String mail) {
-	this.mail = mail;
-}
-
-public String getPwd() {
-	return pwd;
-}
-
-public void setPwd(String pwd) {
-	this.pwd = pwd;
-}
-
-public double getSalario() {
-	return salario;
-}
-
-public void setSalario(double salario) {
-	this.salario = salario;
-}
-
-public Date getFecha_ingreso() {
-	return fecha_ingreso;
-}
-
-public void setFecha_ingreso(Date fecha_ingreso) {
-	this.fecha_ingreso = fecha_ingreso;
-}
-
-public Date getFecha_nacimiento() {
-	return fecha_nacimiento;
-}
-
-public void setFecha_nacimiento(Date fecha_nacimiento) {
-	this.fecha_nacimiento = fecha_nacimiento;
-}
-
-public Perfiles getId_perfil() {
-	return id_perfil;
-}
-
-public void setId_perfil(Perfiles id_perfil) {
-	this.id_perfil = id_perfil;
-}
-
-public Departamentos getId_depar() {
-	return id_depar;
-}
-
-public void setId_depar(Departamentos id_depar) {
-	this.id_depar = id_depar;
-}
+		// getter and setter
+		public int getId_empl() {
+			return id_empl;
+		}
+		
+		public void setId_empl(int id_empl) {
+			this.id_empl = id_empl;
+		}
+		
+		public String getNombre() {
+			return nombre;
+		}
+		
+		public void setNombre(String nombre) {
+			this.nombre = nombre;
+		}
+		
+		public String getApellidos() {
+			return apellidos;
+		}
+		
+		public void setApellidos(String apellidos) {
+			this.apellidos = apellidos;
+		}
+		
+		public char getGenero() {
+			return genero;
+		}
+		
+		public void setGenero(char genero) {
+			this.genero = genero;
+		}
+		
+		public String getMail() {
+			return mail;
+		}
+		
+		public void setMail(String mail) {
+			this.mail = mail;
+		}
+		
+		public String getPwd() {
+			return pwd;
+		}
+		
+		public void setPwd(String pwd) {
+			this.pwd = pwd;
+		}
+		
+		public double getSalario() {
+			return salario;
+		}
+		
+		public void setSalario(double salario) {
+			this.salario = salario;
+		}
+		
+		public Date getFecha_ingreso() {
+			return fecha_ingreso;
+		}
+		
+		public void setFecha_ingreso(Date fecha_ingreso) {
+			this.fecha_ingreso = fecha_ingreso;
+		}
+		
+		public Date getFecha_nacimiento() {
+			return fecha_nacimiento;
+		}
+		
+		public void setFecha_nacimiento(Date fecha_nacimiento) {
+			this.fecha_nacimiento = fecha_nacimiento;
+		}
+		
+		public Perfiles getId_perfil() {
+			return id_perfil;
+		}
+		
+		public void setId_perfil(Perfiles id_perfil) {
+			this.id_perfil = id_perfil;
+		}
+		
+		public Departamentos getId_depar() {
+			return id_depar;
+		}
+		
+		public void setId_depar(Departamentos id_depar) {
+			this.id_depar = id_depar;
+		}
 
 
 	
