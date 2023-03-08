@@ -41,89 +41,12 @@ public class EmpleadoDaoImplList extends AbstractDaoMy8 implements EmpleadoDao {
 		return filas;
 	}
 
-<<<<<<< HEAD
-
-	@Override
-	public List<Empleados> buscarTodos() {
-		sql= "select * from empleados";
-		List<Empleados> lista = new ArrayList<> ();
-		try {
-		ps= conn.prepareStatement(sql);
-			   
-			    rs = ps.executeQuery();
-			    while(rs.next()) {
-			    	Empleados empleado = new Empleados();
-			    	empleado.setId_empl(rs.getInt("id_empl"));
-			    	empleado.setNombre(rs.getString("Nombre"));
-			    	empleado.setApellidos(rs.getString("apellidos"));
-			    	empleado.setGenero(rs.getCharacterStream("genero"));
-			    	empleado.setMail(rs.getString("email"));
-			    	empleado.setPwd(rs.getString("password"));
-			    	empleado.setSalario(rs.getDouble("salario"));
-			    	empleado.setFecha_ingreso(rs.getDate("fecha_ingreso"));
-			    	empleado.setFecha_nacimiento(rs.getDate("fecha_nacimiento"));
-			    	empleado.setId_perfil(rs.getString("id_perfil"));
-			    	empleado.setId_depar(rs.getString("id_departamento"));
-			    }
-				} catch (SQLException e) {
-						
-						e.printStackTrace();
-					}
-					return lista;
-					}
-			    	
-=======
->>>>>>> 05ac9f372699c3de1595550ab5f3dae7387c515f
 		
 	
 
-<<<<<<< HEAD
-	@Override
-	public List<Empleados> empleadosByDepartamentos(int id_depar) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public List<Empleados> empleadosBySexo(char sexo) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public List<Empleados> empleadosByApellidos(String apellidos) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public double salarioTotal() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public double salarioTotalDepartamento(int id_depar) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-
-
-
-
-
-
-
-
-	@Override
-	public Empleados buscarUno(String id_empl) {
-		sql="select * from empleados where id_empl = ?";
-=======
 		@Override
 		public Empleados buscarUno(int id_empl) {
 			sql="select * from empleados where id_empl = ?";
->>>>>>> 05ac9f372699c3de1595550ab5f3dae7387c515f
 		Empleados empleado =null;
 		try {
 			ps= conn.prepareStatement(sql);
@@ -321,20 +244,5 @@ public class EmpleadoDaoImplList extends AbstractDaoMy8 implements EmpleadoDao {
 	}
 	
 }
-
-	
-<<<<<<< HEAD
-	}
-=======
-
-
-
-
-
-
-
-
-
->>>>>>> 05ac9f372699c3de1595550ab5f3dae7387c515f
 
 	
