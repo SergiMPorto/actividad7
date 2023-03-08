@@ -41,7 +41,7 @@ public class ProyectoDaoImplList extends AbstractDaoMy8 implements ProyectoDao {
 	public Proyectos buscarUno(String id_proyecto) {
 		sql = "select * from clientes where id_proyecto = ?";
 		Proyectos pr = null;
-		//OficinaDao odao = new OficinaDaoImplMy8();
+		
 		try {
 			ps = conn.prepareStatement(sql);
 			ps.setString(1, id_proyecto);
@@ -219,7 +219,7 @@ public class ProyectoDaoImplList extends AbstractDaoMy8 implements ProyectoDao {
 	@Override
 	public double margenBrutosProyectosTerminados(String estado, String id_proyecto) {
 		double margenBruto = 0.0;
-		String sql = "SELECT SUM(venta_real - coste_real) AS margen_bruto FROM proyectos WHERE estado = 'terminado' AND venta_real IS NOT NULL AND coste_real IS NOT NULL";
+		String sql = "SELECT SUM(venta_previsto - coste_real) AS margen_bruto FROM proyectos WHERE estado = 'terminado' AND venta_real IS NOT NULL AND coste_real IS NOT NULL";
 		 try {
 			 	ps = conn.prepareStatement(sql);
 				

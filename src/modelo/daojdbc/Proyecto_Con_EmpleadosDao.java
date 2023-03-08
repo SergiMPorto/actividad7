@@ -7,7 +7,7 @@ import modelojavabeans.Proyectos_con_Empleados;
 
 public interface Proyecto_Con_EmpleadosDao {
 	
-	int altaProyecto(Proyectos proyecto);
+	int altaProyecto(Proyectos_con_Empleados proyecto_empl);
 	Proyectos_con_Empleados buscarUno(String id_proyecto);
 	List<Proyectos_con_Empleados> empleadosByProyectos(String id_proyecto);
 	int asignarEmpleadosAProyecto(List<Proyectos_con_Empleados> lista);
